@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Loading...</title>
+    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="loading.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        // btnLoading click function
+        $("#btnLoading").click(function(){
+          loading.initialize();
+        });
+
+        // btnClose click function
+        $("#btnClose").click(function(){
+          loading.close();
+        });
+      });
+    </script>
+    <style>
+      body{
+        font-family: Helvetica, arial, freesans, clean, sans-serif;
+      }
+      p{
+        background-color: #EEEEEE;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid #CCCCCC;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Loading</h1>
+    <p>Loading to your web project. Supported web mobile.</p>
+    <h2>Usage</h2>
+    <p>Add loading.js to your webpage. * You also need jquery</p>
+    <h2>Show loading</h2>
+    <p>loading.initialize();</p>
+    <h2>Close loading</h2>
+    <p>loading.close();</p>
+    <h2>Checking loading</h2>
+    <p>It returns true if the loading is initialized and false if not.<br /><br />loading.exists();</p>
+    <input id="btnLoading" type="button" value="Loading" />
+    <input id="btnClose" type="button" value="Close" />
+  </body>
+</html>
