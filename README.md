@@ -5,7 +5,7 @@
 <h2>Show loading</h2>
 <p>Default text message is "Loading..."</p>
     loading.initialize();
-<p>You can also add your text like the example below</p>
+<p>You can also add your text. See the example below</p>
     loading.initialize("Test Loading...");
 <h2>Close loading</h2>
     loading.close();
