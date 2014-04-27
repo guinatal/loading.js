@@ -1,13 +1,17 @@
 <h1>Loading</h1>
-Very simple and quick loading to your web project. Supported web mobile.
+<p>Very simple and quick loading to your web project. Supported web mobile.</p>
+
 <h2>Usage</h2>
-Add loading.js and jquery to your webpage.
+<p>Add loading.js and jquery to your webpage.</p>
+
 <h3>Show loading</h3>
-Default text message is "Loading..." but you can also add your text message.
+<p>Default text message is "Loading..." but you can also add your text message.</p>
     loading.initialize("My Text Loading...");
+    
 <h3>Close loading</h3>
-Call the following function to close the loading.
+<p>Call the following function to close the loading.</p>
     loading.close();
+    
 <h3>Checking loading</h3>
-It returns true if the loading is initialized and false if not
+<p>It returns true if the loading is initialized and false if not.</p>
     loading.exists();
