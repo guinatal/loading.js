@@ -12,6 +12,6 @@
 <p>Call the following function to close the loading.</p>
     loading.close();
     
-<h3>Checking loading</h3>
+<h3>Check loading</h3>
 <p>It returns true if the loading is initialized and false if not.</p>
     loading.exists();
