@@ -1,4 +1,4 @@
-<h1>Loading</h1>
+<h1>Loading.js</h1>
 <p>Very simple and quick loading to your web project. Supported web mobile.</p>
 
 <h2>Usage</h2>
