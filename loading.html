@@ -1,38 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Loading...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Very simple and quick loading to your web project. Supported web mobile.">
+    <meta name="author" content="Guilherme Natal de Mello">
+
+    <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
     <script type="text/javascript" src="loading.js"></script>
 
-    <script type="text/javascript">
-      $(function(){
-        // btnLoading click function
-        $("#btnLoading").click(function(){
-          loading.initialize();
-        });
-
-        // btnClose click function
-        $("#btnClose").click(function(){
-          loading.close();
-        });
-      });
-    </script>
-    <style>
-      body{
-        font-family: Helvetica, arial, freesans, clean, sans-serif;
-      }
-      p{
-        background-color: #EEEEEE;
-        padding: 7px;
-        border-radius: 3px;
-        border: 1px solid #CCCCCC;
-        font-size: 14px;
+    <style type="text/css">
+      body{font-family: Helvetica, arial, freesans, clean, sans-serif;width: 80%;margin: auto;background-color: #FAFAFA;}
+      p{background-color: white;padding: 20px;border-radius: 3px;border: 1px solid #F2F2F2;font-size: 14px;}
+      h1{font-size: 56px;font-family: 'Gloria Hallelujah', cursive;}a{color: blue;}
+      .buttons{position: absolute;top: 0;right: 0;text-align: center;}
+      #btnLoading, #btnClose {
+      	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+      	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+      	box-shadow:inset 0px 1px 0px 0px #ffffff;
+      	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+      	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+      	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+      	background-color:#ededed;
+      	-webkit-border-top-left-radius:6px;
+      	-moz-border-radius-topleft:6px;
+      	border-top-left-radius:6px;
+      	-webkit-border-top-right-radius:6px;
+      	-moz-border-radius-topright:6px;
+      	border-top-right-radius:6px;
+      	-webkit-border-bottom-right-radius:6px;
+      	-moz-border-radius-bottomright:6px;
+      	border-bottom-right-radius:6px;
+      	-webkit-border-bottom-left-radius:6px;
+      	-moz-border-radius-bottomleft:6px;
+      	border-bottom-left-radius:6px;
+      	text-indent:0;
+      	border:1px solid #dcdcdc;
+      	display:inline-block;
+      	color:#777777;
+      	font-family:arial;
+      	font-size:12px;
+      	font-weight:bold;
+      	font-style:normal;
+      	height:40px;
+      	line-height:38px;
+      	width:100px;
+      	text-decoration:none;
+      	text-align:center;
+      	text-shadow:1px 1px 0px #ffffff;
       }
     </style>
   </head>
   <body>
-    <h1>Loading</h1>
-    <p>Loading to your web project. Supported web mobile.</p>
+    <h1>Loading.js</h1>
+    <p class="buttons">
+      <input id="btnLoading" type="button" value="Loading" onclick="loading.initialize();" />
+      <input id="btnClose" type="button" value="Close" onclick="loading.close();" />
+    </p>
+    <p>Loading to your web project. Supported web mobile.
+      <a href="https://github.com/guinatal/loading.js" target="_blank">https://github.com/guinatal/loading.js</a></p>
     <h2>Usage</h2>
     <p>Add loading.js to your webpage. * You also need jquery</p>
     <h2>Show loading</h2>
@@ -41,7 +68,5 @@
     <p>loading.close();</p>
     <h2>Checking loading</h2>
     <p>It returns true if the loading is initialized and false if not.<br /><br />loading.exists();</p>
-    <input id="btnLoading" type="button" value="Loading" />
-    <input id="btnClose" type="button" value="Close" />
   </body>
 </html>
