@@ -2,11 +2,13 @@
 <p>Very simple and quick loading to your web project. Supported web mobile.</p>
 
 <h2>Usage</h2>
-<p>Add loading.js and jquery to your webpage.</p>
+<p>Add "loading.js" and "loading.css" to your project. Add also the div below.</p>
+    <div id="loading_"></div>
 
 <h3>Show loading</h3>
-<p>Default text message is "Loading..." but you can also add your text message.</p>
-    loading.initialize("My Text Loading...");
+<p>You may just call the function below or also add your loading message as parameter.</p>
+    loading.initialize();
+    loading.initialize("Loading");
     
 <h3>Close loading</h3>
 <p>Call the following function to close the loading.</p>
