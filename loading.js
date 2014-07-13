@@ -9,25 +9,12 @@ var loading = {
     }
 
     if(value == null){
-      value = "loading...";
+      value = "";
     }
 
-    $("body").append("<div id='loading_'>" + value + "</div>");
+    var loading = document.getElementById("loading_");
 
-    $('#loading_').css({
-      "box-shadow": "0 0 0 10000px rgba(0, 0, 0, 0.7)",
-      "position": "fixed",
-      "top": "50%",
-      "left": "50%",
-      "background-color": "white",
-      "font-size": "12px",
-      "font-family": "Arial",
-      "width": "30%",
-      "margin-left": "-15%",
-      "padding": "15px 0",
-      "border-radius": "3px",
-      "text-align": "center"
-    });
+    loading.innerHTML += "<div id='loading_1'><span>" + value + "</span><div id='container_'><div class='ring_ blue_'></div><div id='content_'></div></div></div>";
   },
   /*
     Close loading
@@ -35,7 +22,9 @@ var loading = {
   close: function(){
 
     if(this.exists()){
-      $("#loading_").remove();
+      var loading = document.getElementById("loading_");
+
+      loading.innerHTML = "";
     }
 
   },
@@ -43,9 +32,10 @@ var loading = {
     Check if the loading is already initialized
   */
   exists: function(){
-    var $loading = $("#loading_");
 
-    if($loading.length){
+    var container = document.getElementById("container_");
+
+    if(container){
       return true;
     }
     else{

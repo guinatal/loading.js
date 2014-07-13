@@ -6,10 +6,13 @@
     <meta name="description" content="Very simple and quick loading to your web project. Supported web mobile.">
     <meta name="author" content="Guilherme Natal de Mello">
 
-    <script type="text/javascript" src="../jquery-2.1.0.min.js"></script>
+    <!-- Add loading.js and loading.css -->
     <script type="text/javascript" src="../loading.js"></script>
-
-    <input id="btnLoading" type="button" value="Loading" onclick="loading.initialize();" />
+    <link rel="stylesheet" type="text/css" href="../loading.css" />
+  </head>
+  <body>
+    <div id="loading_"></div>
+    <input id="btnLoading" type="button" value="Loading" onclick="loading.initialize('Loading Text Example');" />
     <input id="btnClose" type="button" value="Close" onclick="loading.close();" />
 
   </body>

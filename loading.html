@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Very simple and quick loading to your web project. Supported web mobile.">
     <meta name="author" content="Guilherme Natal de Mello">
-
     <link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+
+    <!-- Add loading.js and loading.css -->
     <script type="text/javascript" src="loading.js"></script>
+    <link rel="stylesheet" type="text/css" href="loading.css" />
 
     <style type="text/css">
       body{font-family: Helvetica, arial, freesans, clean, sans-serif;width: 80%;margin: auto;background-color: #FAFAFA;}
@@ -53,6 +54,7 @@
     </style>
   </head>
   <body>
+    <div id="loading_"></div>
     <h1>Loading.js</h1>
     <p class="buttons">
       <input id="btnLoading" type="button" value="Loading" onclick="loading.initialize();" />
@@ -61,12 +63,13 @@
     <p>Loading to your web project. Supported web mobile.
       <a href="https://github.com/guinatal/loading.js" target="_blank">https://github.com/guinatal/loading.js</a></p>
     <h2>Usage</h2>
-    <p>Add loading.js to your webpage. * You also need jquery</p>
+    <p>Add <strong>loading.js</strong> and <strong>loading.css</strong> to your webpage.</p>
     <h2>Show loading</h2>
     <p>loading.initialize();</p>
     <h2>Close loading</h2>
     <p>loading.close();</p>
     <h2>Checking loading</h2>
-    <p>It returns true if the loading is initialized and false if not.<br /><br />loading.exists();</p>
+    <p>It returns <strong>true</strong> if the loading is initialized and <strong>false</strong>
+       if not.<br /><br />loading.exists();</p>
   </body>
 </html>
