@@ -30,11 +30,13 @@
         <section id="main-content">
 
 <h3><a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h3>
-<p>Add loading.js and jquery to your webpage.</p>
+<p>Add "loading.js" and "loading.css" to your project. Add also the div below inside body tag.</p>
+<pre><code><div id="loading_"></div></code></pre>
 
 <h3><a name="show-loading" class="anchor" href="#show-loading"><span class="octicon octicon-link"></span></a>Show Loading</h3>
-<p>Default text message is "Loading..." but you can also add your text message.</p>
-<pre><code>loading.initialize("My Text Loading...");</code></pre>
+<p>You may just call the function below or also add your loading message as parameter.</p>
+<pre><code>loading.initialize();</code></pre>
+<pre><mode>loading.initialize("Loading");</mode></pre>
 
 <h3><a name="close-loading" class="anchor" href="#close-loading"><span class="octicon octicon-link"></span></a>Close Loading</h3>
 <p>Call the following function to close the loading.</p>
