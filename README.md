@@ -6,7 +6,7 @@ Very simple and quick loading to your web project. Supported web mobile.
 
 Add "loading.js" and "loading.css" to your project. Add also the div below inside body tag.
 
-```javascript
+```html
 <div id="loading_"></div>
 ```
 
