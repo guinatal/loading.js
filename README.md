@@ -1,20 +1,39 @@
-<h1>Loading.js</h1>
-<p>Very simple and quick loading to your web project. Supported web mobile.</p>
+# Loading.js
 
-<h2>Usage</h2>
-<p>Add "loading.js" and "loading.css" to your project. Add also the div below inside body tag.</p>
-    <div id="loading_"></div>
+Very simple and quick loading to your web project. Supported web mobile.
 
-<h3>Show loading</h3>
-<p>You may just call the function below or also add your loading message as parameter.</p>
+## Usage
+
+Add "loading.js" and "loading.css" to your project. Add also the div below inside body tag.
+
+```javascript
+<div id="loading_"></div>
+```
+
+## Show loading
+
+You may just call the function below or also add your loading message as parameter.
+
+```javascript
     loading.initialize();
-<p></p>
+```
+
+```javascript
     loading.initialize("Loading");
+```
     
-<h3>Close loading</h3>
-<p>Call the following function to close the loading.</p>
+## Close loading
+
+Call the following function to close the loading.
+
+```javascript
     loading.close();
+```
     
-<h3>Check loading</h3>
-<p>It returns true if the loading is initialized and false if not.</p>
+## Check loading
+
+It returns true if the loading is initialized and false if not.
+
+```javascript
     loading.exists();
+```
