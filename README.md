@@ -15,11 +15,11 @@ Add "loading.js" and "loading.css" to your project. Add also the div below insid
 You may just call the function below or also add your loading message as parameter.
 
 ```javascript
-    loading.initialize();
+loading.initialize();
 ```
 
 ```javascript
-    loading.initialize("Loading");
+loading.initialize("Loading");
 ```
     
 ## Close loading
@@ -27,7 +27,7 @@ You may just call the function below or also add your loading message as paramet
 Call the following function to close the loading.
 
 ```javascript
-    loading.close();
+loading.close();
 ```
     
 ## Check loading
@@ -35,5 +35,5 @@ Call the following function to close the loading.
 It returns true if the loading is initialized and false if not.
 
 ```javascript
-    loading.exists();
+loading.exists();
 ```
