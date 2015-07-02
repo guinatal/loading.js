@@ -21,7 +21,7 @@ loading.initialize();
 ```javascript
 loading.initialize("Loading");
 ```
-    
+
 ## Close loading
 
 Call the following function to close the loading.
@@ -29,10 +29,10 @@ Call the following function to close the loading.
 ```javascript
 loading.close();
 ```
-    
+
 ## Check loading
 
-It returns true if the loading is initialized and false if not.
+It returns true if the loading is initialized and false if it's not.
 
 ```javascript
 loading.exists();
