@@ -42,3 +42,7 @@ It returns true if the loading is initialized and false if it's not.
 ```javascript
 loading.exists();
 ```
+
+## Contribute
+
+Contributions are welcome.
