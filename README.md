@@ -1,6 +1,6 @@
 # Loading.js
 
-Very simple and quick loading to your web project. Supported web mobile.
+> Very simple and quick loading to your web project. Supported web mobile.
 
 ## Usage
 
