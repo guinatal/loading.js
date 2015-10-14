@@ -45,4 +45,4 @@ loading.exists();
 
 ## Contribute
 
-Contributions are welcome.
+Contributions are welcome :)
